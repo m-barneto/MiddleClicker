@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "middleclicker",
+  "version": "${version}",
+  "name": "MiddleClicker",
+  "description": "Sends middleclick packets in 1.18",
+  "authors": [
+    "Mattdokn"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/middleclicker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.mattdokn.middleclicker.MiddleClickerClient"
+    ]
+  },
+  "mixins": [
+    "MiddleClicker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
